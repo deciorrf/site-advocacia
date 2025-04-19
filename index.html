@@ -3,29 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escritório de Advocacia</title>
+  <title>Décio Rocha | Advocacia Especializada</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      background: #f7f7f7;
+      color: #222;
       line-height: 1.6;
     }
     header {
-      background: #1b1b1b;
+      background: #0F0F0F;
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 1rem;
     }
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.2rem;
     }
     header p {
-      font-size: 1.2rem;
-      opacity: 0.8;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      opacity: 0.85;
+    }
+    .profile {
+      display: block;
+      max-width: 180px;
+      margin: 1.5rem auto 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     section {
       padding: 2rem 1rem;
@@ -33,13 +44,25 @@
       margin: auto;
     }
     section h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
-      color: #1b1b1b;
     }
     section p {
       font-size: 1rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     .whatsapp-button {
       display: block;
@@ -57,6 +80,18 @@
     .whatsapp-button:hover {
       background: #1ebd59;
     }
+    .copy-button {
+      background: #0F0F0F;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .copy-button:hover {
+      background: #333;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -67,19 +102,30 @@
 </head>
 <body>
   <header>
-    <h1>Dr. Nome Sobrenome</h1>
-    <p>Advogado Especialista em Direito Civil e Empresarial</p>
+    <img src="LOGO (6)0.png" alt="Logo do Escritório">
+    <h1>Décio Rocha Rodrigues Filho</h1>
+    <p>OAB/PI: 22.026</p>
+    <p>Advogado Especialista em Direito do Consumidor, Previdenciário e Saúde</p>
+    <img class="profile" src="IMG_6952.JPG" alt="Foto de Décio Rocha">
   </header>
 
   <section>
-    <h2>Sobre o Escritório</h2>
-    <p>Atuamos com ética, excelência técnica e foco total no cliente. Nossa missão é resolver conflitos de forma eficiente e personalizada, sempre respeitando os valores humanos e legais.</p>
-    <p>Especialidades: Direito Civil, Contratual, Empresarial, Consumidor e Assessoria Jurídica Estratégica.</p>
-    <a class="whatsapp-button" href="https://wa.me/SEUNUMERO" target="_blank">Fale conosco pelo WhatsApp</a>
+    <h2>Apresentação</h2>
+    <p>Meu compromisso é com a resolução ágil, ética e estratégica de conflitos jurídicos. Atuo com foco total em resultados, oferecendo suporte jurídico humanizado e tecnicamente sólido nas áreas do Direito do Consumidor, Direito Previdenciário e Direito à Saúde.</p>
+    <p>Atendimento próximo, linguagem clara, estratégia individualizada para cada caso.</p>
+
+    <div class="contact-info">
+      <span>📞 (86) 9 9474-1331</span>
+      <span>📧 decioradv@gmail.com</span>
+      <button class="copy-button" onclick="navigator.clipboard.writeText('86994741331')">Copiar telefone</button>
+    </div>
+
+    <a class="whatsapp-button" href="https://wa.me/5586994741331" target="_blank">Fale comigo no WhatsApp</a>
   </section>
 
   <footer>
-    &copy; 2025 - Todos os direitos reservados.
+    &copy; 2025 - Décio Rocha Advocacia. Todos os direitos reservados.
   </footer>
 </body>
 </html>
+Atualização com dados reais
